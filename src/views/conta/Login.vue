@@ -1,0 +1,39 @@
+<template>
+    <div>
+        <div class="container" style="padding-top: 10%">
+            <div class="row d-flex justify-content-center">
+                <div class="col-5 text-left login-form-container">
+                    <div class="d-flex justify-content-center">
+                        <img src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png" width="150" alt="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com mais ninguém.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"/>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+                    <label class="form-check-label" for="exampleCheck1">Olhe para mim</label>
+                </div>
+                <button @click="login()" type="submit" class="btn btn-primary btn-block">Entrar</button>
+            </div>
+        </div>
+    </div>
+</template>
+<script>
+import { mapActions} from "vuex"
+export default {
+    name: "Login",
+    methods: {
+        ...mapActions("conta", ["login"]),
+    },
+};
+</script>
+<style lang="">
+    
+</style>
