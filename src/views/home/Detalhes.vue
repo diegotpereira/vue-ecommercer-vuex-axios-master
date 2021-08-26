@@ -7,12 +7,12 @@
                 </div>
             </div>
             <div class="col-6 text-left text-justify">
-                <div class="display-3">{{ produto.nome}}</div>
+                <div class="display-3">{{ produto.name}}</div>
                 <p class="lead text-justify">{{ produto.content}}</p>
            
                 <div>
                         <p class="h3">Preço</p>
-                        <p class="h2">${{produto.preco}}</p>
+                        <p class="h2">R${{produto.price}}</p>
                 </div>
                 <AddNoCarrinho :produto="produto" v-if="usuario.uid"/>
              </div>    
