@@ -13,7 +13,7 @@ export function getProdutos({ commit }) {
 }
 
 export function produtoDetalhes({ commit }, id) {
-    let = "https://my-json-server.typicode.com/Nelzio/ecommerce-fake-json/products";
+    let url = "https://my-json-server.typicode.com/Nelzio/ecommerce-fake-json/products";
     axios.get(url, { params: { id: id } }).then((response) => {
         commit("setProdutos", response.data[0]);
     }).catch(function(error) {

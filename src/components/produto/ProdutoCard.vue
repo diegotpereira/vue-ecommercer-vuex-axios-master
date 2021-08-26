@@ -4,7 +4,7 @@
         <div class="card-body">
             <h5 class="card-title text-left">{{ produto.nome}}</h5>
             <div class="row">
-                <router-link type="button" class="btn btn-primary btn-lg" :to="'/detalhe/' + produto.id">Detalhes</router-link>
+                <router-link type="button" class="btn btn-primary btn-lg" :to="'/detalhes/' + produto.id">Detalhes</router-link>
             </div>
         </div>
     </div>

@@ -1,11 +1,11 @@
-export function produtos(estado) {
-    return estado.produtos
+export function produtos(state) {
+    return state.produtos
 }
 
-export function produto(estado) {
-    return estado.produto
+export function produto(state) {
+    return state.produto
 }
 
-export function carrinho(estado) {
-    return estado.carrinho
+export function carrinho(state) {
+    return state.carrinho
 }

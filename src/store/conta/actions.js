@@ -7,7 +7,7 @@ export function login({ commit }) {
             let usuarioDados = {
                 nomeExibicao: response.data.results[0].nome,
                 email: response.data.results[0].email,
-                fotoURL: response.data.results[0].foto.miniatura,
+                photoURL: response.data.results[0].picture.thumbnail,
                 uid: response.data.results[0].login.uuid
             }
 

@@ -5,24 +5,24 @@ import produto from './produto'
 
 Vue.use(Vuex)
 
-// export default function() {
-//     const Store = new Vuex.Store({
-//         modules: {
-//             conta,
-//             produto
-//         },
+export default function() {
+    const Store = new Vuex.Store({
+        modules: {
+            conta,
+            produto
+        },
 
-//         strict: process.env.DEV
-//     })
+        strict: process.env.DEV
+    })
 
-//     return Store
-// }
+    return Store
+}
 
-export default new Vuex.Store({
+// export default new Vuex.Store({
 
-    modules: {
-        conta,
-        produto
-    }
+//     modules: {
+//         conta,
+//         produto
+//     }
 
-});
+// });
